@@ -1,0 +1,122 @@
+.secaoPlanos {
+    text-align: center;
+    background-color: #F7F4F4;
+    padding-top: 25px;
+  }
+  
+  .secaoPlanos h2{
+    font-size: 2rem;
+  }
+  
+  .secaoPlanos-plano {
+    border-radius: 5px;
+    background-color: #fff;
+    width: 80%;
+    margin: 0 .5em 2em .5em;
+    padding-bottom: 2em;
+    box-shadow: 0 2px 9px #ddd;
+    max-width: 300px;
+    display: inline-block;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .secaoPlanos-plano:hover{
+    scale: 1.1;
+  }
+  
+  .secaoPlanos-plano-start {
+    --secaoPlanos-btnColor: #56CCF2;
+  }
+  
+  .secaoPlanos-plano-ultra {
+    --secaoPlanos-btnColor: #B04CD9;
+  }
+  
+  .secaoPlanos-plano-mega {
+    --secaoPlanos-btnColor: #E33B3B;
+  }
+  
+  .secaoPlanos-plano-titulo {
+    color: var(--secaoPlanos-btnColor);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    width: 100%;
+    padding: .4em 1em;
+    font-size: 1.5em;
+    border-bottom: 1px solid #DFE3E5;
+    margin-bottom: .5em;
+  }
+  
+  .secaoPlanos-plano-preco {
+    color: var(--secaoPlanos-btnColor);
+    text-align: center;
+    font-size: 3em;
+    margin-top: 12px;
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+    position: relative;
+  }
+  
+  .secaoPlanos-plano-itens {
+    text-align: left;
+    line-height: 2;
+    list-style: disc;
+    color: #666;
+    list-style: none;
+    padding: 0 15px;
+  }
+  
+  .secaoPlanos-plano-btn {
+    color: var(--secaoPlanos-btnColor);
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--secaoPlanos-btnColor);
+    padding: .4em 1.5em;
+    transition: 
+      color 100ms ease-in,
+      transform 250ms ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    z-index: 1;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .secaoPlanos-plano-btn:hover, 
+  .secaoPlanos-plano-btn:focus-visible {
+    color: white;
+    transform: scale(1.1);
+  }
+
+  .secaoPlanos-plano-btn:active{
+    transform: scale(0.99) translateY(5px);
+  }
+  
+  .secaoPlanos-plano-btn::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: var(--secaoPlanos-btnColor);
+    transition: all 250ms ease;
+    z-index: -1;
+  }
+  
+  .secaoPlanos-plano-btn:hover::before, 
+  .secaoPlanos-plano-btn:focus-visible::before {
+    width: 100%;
+  }
+  
+  @media (min-width: 830px) {
+  
+    .secaoPlanos-plano {
+      max-width: 260px;
+    }
+  }

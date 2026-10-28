@@ -1,0 +1,107 @@
+.cabecalho {
+    height: 80px;
+    background-color: #242b36;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  
+  .cabecalho-nav-lista {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .cabecalho-nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .cabecalho-nav-item a:hover {
+    color: #d45b68;
+  }
+  
+  .cabecalho-logo {
+    width: 170px;
+    margin-bottom: .2em;
+    z-index: 999;
+  }
+  
+  .menuHamburguer{
+    all: unset;
+    display: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  @media (max-width: 768px) {
+    .cabecalho{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .menuHamburguer{
+      display: block;
+    }
+  
+    .cabecalho-nav{
+      animation: nav-close 300ms ease;
+      position: fixed;
+      top: 80px;
+      background-color: #242b36;
+      width: 100%;
+      left: 0;
+      padding: 25px 0;
+      animation: nav-open 300ms ease;
+      z-index: 3;
+    }
+  
+    .close{
+      display: none;
+    }
+  
+    .close-animation{
+      animation: nav-close 300ms ease forwards;
+    }
+  
+    .cabecalho-nav-lista{
+      flex-direction: column;
+      text-align: center; 
+    }
+  
+    .cabecalho-nav-lista a{
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+  
+  @keyframes nav-open {
+    from{
+      transform: translateX(-100%);
+    }
+    to{
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes nav-close {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+  }

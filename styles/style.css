@@ -1,0 +1,35 @@
+@import url('./cabecalho.css');
+@import url('./secaoDestaque.css');
+@import url('./secaoDiferencial.css');
+@import url('./secaoSobre.css');
+@import url('./secaoPlanos.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+[id]{
+  scroll-margin-top: 80px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  padding: 3.5em 5%;
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
+main {
+  display: block;
+  width: 100%;
+}

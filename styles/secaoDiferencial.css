@@ -1,0 +1,47 @@
+.secaoDiferenciais {
+    padding: 2em 0;
+    background-color: #f7f4f4;
+  }
+  
+  .diferenciais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    list-style: none;
+  }
+  
+  .diferenciais-diferencial {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .diferenciais-diferencial div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+  }
+  
+  .diferenciais-diferencial img {
+    width: 42px;
+    height: auto;
+    margin-bottom: 1em;
+  }
+  
+  .diferenciais-diferencial h2 {
+    color: #4F4C4C;
+    font-size: 1.4em;
+    margin-bottom: .6em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .diferenciais-diferencial p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1em;
+  }
+  

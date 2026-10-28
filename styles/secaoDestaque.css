@@ -1,0 +1,54 @@
+.secaoDestaque {
+    background-image: url("../img/bg-intro.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 8em 2em;
+    color: #fff;
+  }
+  
+  .secaoDestaque-titulo {
+    font-weight: bold;
+    margin-bottom: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    line-height: 1.2;
+  }
+  
+  .secaoDestaque-texto {
+    max-width: 600px;
+    margin: 0 auto 2em auto;
+    font-size: 1.25em;
+    font-weight: normal;
+    line-height: 1.6;
+  }
+  
+  .btnPadrao {
+    border-radius: 5px;
+    border: 0;
+    background-color: #B72E2E;
+    color: #fff;
+    font-size: 1.2em;
+    padding: .6em 1.5em;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    outline: 0;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 250ms ease, box-shadow 250ms ease;
+  }
+  
+  .btnPadrao:focus-visible{
+    inset: 1px;
+    background-color: #ff0019;
+    transition: scale(1.05);
+  }
+  
+  .btnPadrao:hover{
+    background-color: #962424;
+  }
+  
+  .btnPadrao:active{
+    background-color: #aa3131;
+    transform: scale(0.99) translateY(2px);
+  } 
