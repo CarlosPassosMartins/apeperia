@@ -34,6 +34,18 @@
     margin-bottom: .2em;
     z-index: 999;
   }
+
+  .logoheader{
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+  }
+
+  .logo-anchor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .menuHamburguer{
     all: unset;

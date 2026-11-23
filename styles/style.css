@@ -3,6 +3,10 @@
 @import url('./secaoDiferencial.css');
 @import url('./secaoSobre.css');
 @import url('./secaoPlanos.css');
+@import url('./secaoBlog.css');
+@import url('./resto.css');
+@import url('./institucional.css');
+
 
 * {
   margin: 0;
